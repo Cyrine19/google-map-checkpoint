@@ -1,24 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Container, Typography, Paper } from '@mui/material';
+import MapContainer from './MapContainer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <Paper elevation={3} style={{ padding: '20px', margin: '20px' }}>
+        <Typography variant="h3" gutterBottom>
+          Welcome to Our Map Page
+        </Typography>
+        <MapContainer />
+      </Paper>
+    </Container>
   );
 }
 
